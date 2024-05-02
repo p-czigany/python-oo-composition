@@ -5,5 +5,5 @@ class Employee(object):
             raise ValueError('\"None\" is not a name, for Pete\'s sake!')
         self.__name = name
 
-    def what_is_your_name(self) -> str:
+    def name(self) -> str:
         return self.__name

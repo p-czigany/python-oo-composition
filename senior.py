@@ -8,5 +8,5 @@ class Senior(object):
             raise ValueError('A serf should exist and have a name!')
         self.__serf = serf
 
-    def who_is_your_serf(self):
+    def serf(self):
         return self.__serf

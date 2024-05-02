@@ -7,5 +7,5 @@ class Junior(object):
             raise ValueError('A Junior must have a senior who is an Employee!')
         self.__senior = senior
 
-    def who_is_your_daddy(self) -> Employee:
+    def daddy(self) -> Employee:
         return self.__senior

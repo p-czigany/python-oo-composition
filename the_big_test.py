@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
         expected = cole
 
         # act
-        actual = boss_bob.who_is_your_serf()
+        actual = boss_bob.serf()
 
         # assert
         self.assertEqual(expected, actual)
@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
         expected = bonola
 
         # act
-        actual = junior_alice.who_is_your_daddy()
+        actual = junior_alice.daddy()
 
         # assert
         self.assertEqual(expected, actual)
@@ -40,7 +40,7 @@ class MyTestCase(unittest.TestCase):
         expected = bob
 
         # act
-        actual = senior_bob.who_is_your_serf()
+        actual = senior_bob.serf()
 
         # assert
         self.assertEqual(expected, actual)
@@ -53,7 +53,7 @@ class MyTestCase(unittest.TestCase):
         expected = cole
 
         # act
-        actual = senior_bob.who_is_your_daddy()
+        actual = senior_bob.daddy()
 
         # assert
         self.assertEqual(expected, actual)
@@ -66,7 +66,7 @@ class MyTestCase(unittest.TestCase):
         expected = name
 
         # act
-        actual = boss_bob.what_is_your_name()
+        actual = boss_bob.name()
 
         # assert
         self.assertEqual(expected, actual)
@@ -78,7 +78,7 @@ class MyTestCase(unittest.TestCase):
         expected = name
 
         # act
-        actual = my_junior.what_is_your_name()
+        actual = my_junior.name()
 
         # assert
         self.assertEqual(expected, actual)
@@ -90,7 +90,7 @@ class MyTestCase(unittest.TestCase):
         expected = name
 
         # act
-        actual = my_junior.what_is_your_name()
+        actual = my_junior.name()
 
         # assert
         self.assertEqual(expected, actual)
