@@ -1,9 +1,11 @@
-from has_name import HasName
-from has_senior import HasSenior
+from employee import Employee
 
 
-class Junior(HasSenior, HasName):
+class Junior(object):
+    def __init__(self, senior):
+        if senior is None or not isinstance(senior, Employee):
+            raise ValueError('A Junior must have a senior who is an Employee!')
+        self.__senior = senior
 
-    def __init__(self, name, senior: HasName):
-        HasName.__init__(self, name)
-        HasSenior.__init__(self, senior)
+    def who_is_your_daddy(self) -> Employee:
+        return self.__senior

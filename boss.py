@@ -1,9 +1,9 @@
-from has_name import HasName
-from has_serf import HasSerf
+from employee import Employee
+from senior import Senior
 
 
-class Boss(HasName, HasSerf):
+class Boss(Employee, Senior):
 
-    def __init__(self, name, serf: HasName):
-        HasName.__init__(self, name)
-        HasSerf.__init__(self, serf)
+    def __init__(self, name, serf: Employee):
+        Employee.__init__(self, name)
+        Senior.__init__(self, serf)

@@ -1,4 +1,4 @@
-class HasName(object):
+class Employee(object):
 
     def __init__(self, name: str):
         if name is None:
